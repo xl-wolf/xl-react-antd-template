@@ -1,0 +1,20 @@
+{
+  // 配置根目录下的文件是否隐藏(true)与显示 (false)
+  "files.exclude": {
+    "**/yarn.lock": true,
+    "**/package-lock.json": true,
+    "**/package.json": false,
+    "**/README.md": false,
+    "**/.gitignore": false,
+    "**/vue.config.js": false,
+    "**/babel.config.js": true,
+    "**/LICENSE": true,
+    // "**/.travis.yml": true,
+    "**/.eslintrc.js": true,
+    "**/jest.config.js": true,
+    "**/jsconfig.json": true,
+    "**/.editorconfig": true,
+    "**/postcss.config.js": true,
+    "**/.eslintignore": true
+  }
+}

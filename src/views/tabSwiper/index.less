@@ -1,0 +1,77 @@
+@import "~@/styles/variables.less";
+#tab-swiper-module {
+  .tabbar-area {
+    position: relative;
+    .swiper-bar {
+      display: flex;
+      width: calc(100% - 40px);
+      overflow: scroll;
+      .tab-item {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 14px;
+        color: #ffffff;
+        cursor: pointer;
+        transition:0.7s;
+        &.active {
+          color: @theme-color;
+          font-size: 20px;
+          border-bottom: 2px solid @theme-color;
+        }
+        &:hover {
+          color: @theme-color;
+        }
+      }
+    }
+    .icon-show-all {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      color: #fff;
+      &:hover {
+        color: @theme-color;
+      }
+    }
+    .sub-tab-list {
+      margin-top: 20px;
+      .sub-tab-item {
+        padding: 4px 14px;
+        border-radius: 30px;
+        background: #fff;
+        display: inline-block;
+        margin-right: 8px;
+        cursor: pointer;
+        transition:0.7s;
+        border: 1px solid #fff;
+        &.active {
+          color: @theme-color;
+          border: 1px solid @theme-color;
+        }
+      }
+    }
+  }
+}
+.drawer-in-tab-swiper {
+  .tab-item {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    color: #777;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition:0.7s;
+    &.active {
+      color: @theme-color;
+      font-size: 20px;
+      border-bottom: 2px solid @theme-color;
+    }
+    &:hover {
+      color: @theme-color;
+    }
+  }
+}
