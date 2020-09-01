@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import ReactDOM from 'react-dom'
 let parentProxy = null
 export default class Parent extends Component {
-  constructor(props){
+  constructor(props) {
     super(props)
     console.log('parent constructor()')
     parentProxy = this
   }
-  componentWillMount(){
+  componentWillMount() {
     console.log("parent componentWillMount()")
   }
   render() {
@@ -15,28 +15,30 @@ export default class Parent extends Component {
     return (
       <div className="app-container">
         <Child ref="child" />
+        <div onClick={function () { console.log(this) }}>click me normal functin</div>
+        <div onClick={() => { console.log(this) }}>click me arrow function</div>
       </div>
     );
   }
-  componentDidMount(){
+  componentDidMount() {
     console.log("parent componentDidMount()")
     console.log(this.refs.child.refs.test)
     console.log(this.refs.child)
     console.log("parent componentDidMount()")
   }
 
-  componentWillReceiveProps(){
+  componentWillReceiveProps() {
     console.log('parent componentDidMount()')
   }
 
 }
 
 class Child extends Component {
-  constructor(){
+  constructor() {
     super()
     console.log('child constructor()')
   }
-  componentWillMount(){
+  componentWillMount() {
     console.log("child componentWillMount()")
   }
   render() {
@@ -47,16 +49,16 @@ class Child extends Component {
       </div>
     );
   }
-  componentDidMount(){
+  componentDidMount() {
     console.log("child componentDidMount()")
     console.log(ReactDOM.findDOMNode(this.el))
   }
 
-  componentWillReceiveProps(){
+  componentWillReceiveProps() {
     console.log('child componentDidMount()')
   }
-  
-  update(){
-    console.log(this===parentProxy.refs.child)
+
+  update() {
+    console.log(this === parentProxy.refs.child)
   }
 }

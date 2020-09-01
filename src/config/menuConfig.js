@@ -195,5 +195,19 @@ export default [
     icon: null,
     iconBeyondAntd: 'icon-wodemoban',
     roles: ["admin"]
+  },
+  {
+    title: "hook-demo",
+    path: "/hookDemo",
+    icon: null,
+    iconBeyondAntd: 'icon-wodemoban',
+    roles: ["admin"]
+  }, 
+  {
+    title: "hook-useContext",
+    path: "/hookUseContext",
+    icon: null,
+    iconBeyondAntd: 'icon-wodemoban',
+    roles: ["admin"]
   }
 ]

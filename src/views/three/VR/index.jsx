@@ -268,6 +268,10 @@ class VR extends Component {
       </div>
     );
   }
+
+  componentWillUnmount(){
+    window.removeEventListener("resize",this.onWindowResize)
+  }
 }
 
 export default connect((state) => state)(VR);
