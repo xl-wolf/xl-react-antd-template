@@ -7,7 +7,7 @@ export default function () {
   return (
     <div className="app-container">
       <Color>
-        <Button></Button>
+        <Button {...{size:'default'}}></Button>
         <ColorArea></ColorArea>
       </Color>
     </div>
