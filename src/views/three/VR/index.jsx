@@ -264,7 +264,7 @@ class VR extends Component {
   render() {
     return (
       <div className="app-container">
-        <div id="vr-container" style={{ height: "600px" }}></div>
+        <div id="vr-container" style={{ height: 'inherit' }}></div>
       </div>
     );
   }

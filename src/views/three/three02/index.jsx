@@ -201,7 +201,7 @@ class Three02 extends Component {
   render() {
     return (
       <div className="app-container">
-        <div id="three02-container" style={{ height: '600px' }}></div>
+        <div id="three02-container" style={{ height: 'inherit' }}></div>
       </div>
     )
   }
