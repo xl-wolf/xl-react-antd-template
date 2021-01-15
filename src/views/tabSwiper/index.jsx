@@ -6,15 +6,34 @@ import { tabListOpts, subListOpts } from "./dataSouce";
 export default class index extends Component {
   constructor(props) {
     super(props);
-    this.state.tabListOpts = [...tabListOpts];
-    this.state.subListOpts = [...subListOpts];
+    this.state = {
+      tabListOpts: [...tabListOpts],
+      subListOpts: [...subListOpts],
+      drawerVisible: false,
+      drawerPlacement: "right",
+    };
+    console.log('constructor')
   }
-  state = {
-    tabListOpts: null,
-    subListOpts: null,
-    drawerVisible: false,
-    drawerPlacement: "right",
-  };
+  componentWillMount(){
+    console.log('componentWillMount')
+  }
+  componentDidMount(){
+    console.log('componentDidMount')
+  }
+
+  componentWillReceiveProps(){
+    console.log('componentWillReceiveProps')
+  }
+  shouldComponentUpdate(){
+    return true
+  }
+  componentWillUpdate(){
+    console.log('componentWillUpdate')
+  }
+  componentDidUpdate(){
+    console.log('componentDidUpdate')
+  }
+  
   handleTabItemClick = async (item) => {
     // 点击抽屉某一项，页面对应的tab跟随切换到视野内scrollIntoView()
     document.getElementById(item.id).scrollIntoView({ behavior: "smooth" });
@@ -61,6 +80,7 @@ export default class index extends Component {
     this.setState({ drawerVisible: false });
   };
   render() {
+    console.log('render')
     return (
       <TabSwiperUI
         tabListOpts={this.state.tabListOpts}
