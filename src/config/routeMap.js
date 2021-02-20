@@ -26,7 +26,7 @@ const Clipboard = Loadable({loader: () => import(/*webpackChunkName:'Clipboard'*
 const User = Loadable({loader: () => import(/*webpackChunkName:'User'*/'@/views/user'),loading: Loading})
 const TabSwiper = Loadable({loader: () => import(/*webpackChunkName:'TabSwiper'*/'@/views/tabSwiper'),loading: Loading})
 const DemoTest = Loadable({loader: () => import(/*webpackChunkName:'DemoTest'*/'@/views/demoTest'),loading: Loading})
-const hookDemo = Loadable({loader: () => import(/*webpackChunkName:'hookDemo'*/'@/views/hookDemo'),loading: Loading})
+const BMapHookDemo = Loadable({loader: () => import(/*webpackChunkName:'BMapHookDemo'*/'@/views/BMapHookDemo'),loading: Loading})
 const hookUseContext = Loadable({loader: () => import(/*webpackChunkName:'hookUseContext'*/'@/views/hookUseContext'),loading: Loading})
 const Error404 = Loadable({loader: () => import(/*webpackChunkName:'Error404'*/'@/views/error/404'),loading: Loading})
 
@@ -57,7 +57,7 @@ export default [
   { path: "/user", component: User, roles: ["admin"] },
   { path: "/tabSwiper", component: TabSwiper, roles: ["admin"] },
   { path: "/demoTest", component: DemoTest, roles: ["admin"] },
-  { path: "/hookDemo", component: hookDemo, roles: ["admin"] },
+  { path: "/BMapHookDemo", component: BMapHookDemo, roles: ["admin"] },
   { path: "/hookUseContext", component: hookUseContext, roles: ["admin"] },
   { path: "/error/404", component: Error404 }
 ]

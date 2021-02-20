@@ -197,10 +197,10 @@ export default [
     roles: ["admin"]
   },
   {
-    title: "hook-demo",
-    path: "/hookDemo",
+    title: "BMapHookDemo",
+    path: "/BMapHookDemo",
     icon: null,
-    iconBeyondAntd: 'icon-wodemoban',
+    iconBeyondAntd: 'icon-baidudituqibiaodianjishijian',
     roles: ["admin"]
   }, 
   {
