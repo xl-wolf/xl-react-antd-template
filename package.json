@@ -41,7 +41,7 @@
     "screenfull": "^5.0.2",
     "script-loader": "^0.7.2",
     "three": "^0.116.1",
-    "xlsx": "^0.16.0"
+    "xlsx": "^0.17.0"
   },
   "scripts": {
     "start": "set BROWSER=CHROME&&set PORT=6099&&react-app-rewired start",
